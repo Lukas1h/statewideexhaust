@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 
-
+//Main Hero component that displays hero image and tagline
 export default function Hero() {
     return (
         <>
