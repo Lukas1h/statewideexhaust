@@ -21,7 +21,10 @@ const config: Config = {
           '800': '#9d1717',
           '900': '#821a1a',
           '950': '#470808',
-        },      
+        },    
+        'grey':{
+          '500':"#534545"
+        }  
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
