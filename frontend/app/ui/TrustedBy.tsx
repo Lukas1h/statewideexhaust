@@ -1,5 +1,5 @@
 import Image from "next/image"
-
+import { Card } from "./components"
 //Array of images and to display
 const images = [
     {
@@ -31,7 +31,7 @@ const images = [
 
 export default function TrustedBy(){
     return (
-        <div className="bg-gradient-to-l from-red-100 to-gray-200 rounded-2xl mt-10 flex items-center flex-col py-6 p-2 md:p-8">
+        <Card>
             <h2 className="text-2xl md:text-3xl font-extrabold text-grey-500 text-center">Trusted by both local and renowned businesses.</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-6 m-2 ">
                 {/* Iterate through images and display them */}
@@ -50,6 +50,6 @@ export default function TrustedBy(){
                 
                 
             </div>
-        </div>
+        </Card>
     )
 }

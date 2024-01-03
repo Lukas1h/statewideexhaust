@@ -1,5 +1,5 @@
 import Image from "next/image"
-
+impo
 
 
 export default function Hero() {
