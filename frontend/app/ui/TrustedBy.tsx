@@ -37,7 +37,7 @@ export default function TrustedBy(){
                 {/* Iterate through images and display them */}
                 {images.map((image)=>{
                     return (
-                        <div className="flex items-center ">
+                        <div className="flex items-center " key={image.src}>
                             <Image
                                 src={image.src}
                                 alt={image.alt}

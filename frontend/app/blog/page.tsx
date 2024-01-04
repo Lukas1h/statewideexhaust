@@ -8,7 +8,7 @@ export default async function Blog(){
     return (
         <>
             {posts.map((post)=>{
-                return <Link href={`/blog/${post.slug.current}`}>{post.title}</Link>
+                return <Link key={post.slug.current} href={`/blog/${post.slug.current}`}>{post.title}</Link>
             })}
         </> 
     )
