@@ -5,7 +5,6 @@ import Image from "next/image"
 export default function Hero() {
     return (
         <>
-            <div className="h-36"></div>
             <div className="flex flex-col items-center">
                 <Image
                     src="/logo-w-text.png"

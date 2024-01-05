@@ -4,7 +4,6 @@ import Link from "next/link";
 
 export default async function Blog(){
     const posts = await fetchAllPosts()
-    //Add comment
     return (
         <>
             {posts.map((post)=>{

@@ -2,6 +2,10 @@ import type { Metadata } from 'next'
 import { Inter,Assistant } from 'next/font/google'
 import './globals.css'
 
+import { ReactNode } from "react";
+import { Header } from "./ui/Header";
+
+
 const inter = Inter({ subsets: ['latin'] })
 const assistant = Assistant({ subsets: ['latin'] })
 
@@ -17,7 +21,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        <main className="flex min-h-screen flex-col items-center justify-between">
+          <div className="max-w-4xl m-2">
+            {children}
+          </div>
+        </main>
+        {/* <Footer /> TODO: Add Footer! */}
+      </body>
     </html>
   )
 }
