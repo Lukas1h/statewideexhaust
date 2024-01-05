@@ -1,15 +1,11 @@
-import Hero from "@/app/ui/Home/Hero"
-import TrustedBy from "@/app/ui/Home/TrustedBy"
+import {Home} from "@/app/ui/Home"
 
-export default async function Home() {
+export default async function RootPage() {
 
 
   return (
     
-      <>
-        <Hero/>
-        <TrustedBy/>
-      </>
+      <Home></Home>
       
   )
 }

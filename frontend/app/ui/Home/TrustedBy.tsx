@@ -32,8 +32,8 @@ const images = [
 export default function TrustedBy(){
     return (
         <Card>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-grey-500 text-center">Trusted by both local and renowned businesses.</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-6 m-2 "> {/* Image grid is 2 cols on mobile and 3 on desktop. */}
+            <h2 className="text-2xl md:text-3xl font-extrabold text-grey-500 text-center mb-4">Trusted by both local and renowned businesses.</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-16 m-2 "> {/* Image grid is 2 cols on mobile and 3 on desktop. */}
                 {/* Iterate through images and display them */}
                 {images.map((image)=>{
                     return (
