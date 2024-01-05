@@ -1,5 +1,6 @@
 import Hero from "@/app/ui/Home/Hero"
 import TrustedBy from "@/app/ui/Home/TrustedBy"
+import Images from "./Images"
 import "./styles.css"
 
 export default async function Home() {
@@ -11,6 +12,7 @@ export default async function Home() {
         <div className="home-background">
           <Hero/>
           <TrustedBy/>
+          <Images></Images>
           <div className="h-[500px]"></div>
         </div>
       </div>

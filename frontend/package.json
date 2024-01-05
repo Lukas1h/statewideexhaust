@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@portabletext/react": "^3.0.11",
     "@sanity/client": "^6.10.0",
     "next": "14.0.4",
     "next-sanity-client": "^1.0.7",
+    "next-sanity-image": "^6.1.1",
     "react": "^18",
     "react-dom": "^18"
   },

@@ -1,8 +1,18 @@
+import { Suspense } from "react";
 import { fetchAllPosts } from "../lib/sanity";
 import { Post } from "../types/post";
 import Link from "next/link";
 
 export default async function Blog(){
+    
+    return (
+        <Suspense>
+            <ListBlogPosts/>
+        </Suspense>
+    )
+}
+
+async function ListBlogPosts(){
     const posts = await fetchAllPosts()
     return (
         <>

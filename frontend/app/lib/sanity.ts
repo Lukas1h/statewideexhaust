@@ -14,6 +14,20 @@ export async function fetchAllPosts(): Promise<Post[]> {
 }
 
 export async function fetchPostBySlug(slug:string): Promise<Post> {
-    const posts = await client.fetch<Post[]>('*[_type == "post" && slug.current == $slug]', { slug })
+    const posts = await client.fetch<Post[]>(`
+      *[_type == "post" && slug.current == $slug]{
+        ...,
+        author->{...},
+        "coverImage": coverImage.asset->{
+          // include specific asset properties you need
+          url,
+          metadata {
+            // include additional properties if needed
+            dimensions,
+            palette
+          }
+        },
+      }
+    `, { slug })
     return posts[0]
 }
