@@ -18,7 +18,7 @@
   /* Appearance */
 
   backdrop-filter: blur(25px);
-  border: 1px solid white;
+  /* border: 1px solid white; */
   -webkit-mask: linear-gradient(
     hsl(0, 0%, 0%) 70%,
     hsla(0, 0%, 0%, 0.738) 19%,
@@ -52,7 +52,7 @@
 ); */
 
 
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 
