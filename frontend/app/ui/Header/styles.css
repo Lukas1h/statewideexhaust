@@ -16,12 +16,13 @@
   justify-content:space-evenly;
 
   /* Appearance */
-
   backdrop-filter: blur(25px);
   mask: linear-gradient(0deg, transparent 0%, black 30%);
-  /* background-color: black; */
 
-    /* background-color: brown; */
-}
+  /* Trying to remove blur flickering */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  overflow: hidden;
+  will-change:top;
 
 
