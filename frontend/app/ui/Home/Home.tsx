@@ -1,7 +1,9 @@
 import Hero from "@/app/ui/Home/Hero"
 import TrustedBy from "@/app/ui/Home/TrustedBy"
 import Images from "./Images"
+import WhyChooseUs from "./WhyChooseUs"
 import "./styles.css"
+
 
 export default async function Home() {
 
@@ -13,6 +15,7 @@ export default async function Home() {
           <Hero/>
           <TrustedBy/>
           <Images></Images>
+          <WhyChooseUs></WhyChooseUs>
           <div className="h-[500px]"></div>
         </div>
       </div>
