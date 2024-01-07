@@ -23,8 +23,8 @@ const dirtyImages = [
 export default function Images(){
     return (
         <Card>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-grey-500 text-center">Transform your kitchen hood from this:</h2>
-            <div className="w-full flex flex-wrap items-center justify-center my-2 mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-grey-500 text-center ">Transform your <em className="font-black">nasty</em> kitchen hood from this:</h2>
+            <div className="w-full flex flex-wrap items-center justify-center mb-6">
                 {
                     dirtyImages.map((image)=>{
                         return (
@@ -41,8 +41,8 @@ export default function Images(){
                     })
                 }
             </div>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-grey-500 text-center mb-4">To this:</h2>
-            <div className="w-full flex flex-wrap items-center justify-center my-2 mb-6">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-grey-500 text-center">Into this:</h2>
+            <div className="w-full flex flex-wrap items-center justify-center">
                 {
                     cleanImages.map((image)=>{
                         return (

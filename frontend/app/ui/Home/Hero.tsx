@@ -14,7 +14,7 @@ export default function Hero() {
                     alt="Hero Image"
                     className=""
                 />
-                <h1 className="text-2xl md:text-3xl font-light mt-4 text-center">Where Unparalleled Quality Meets Spectacular Service</h1>
+                <h1 className="text-2xl md:text-3xl font-light mt-4 text-center">Where <em>Unparalleled Quality</em> Meets <em>Spectacular Service</em></h1>
 
                 <Link href={"/contact-us"} className="bg-gradient-to-r from-red-500 to-red-600 hover:shadow-md transition-all text-white font-bold py-4 px-6 rounded-full text-lg md:text-xl m-4">
                     Contact Us
