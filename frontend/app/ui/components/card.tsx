@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 export default function Card(
-        {children, className}:{children:ReactNode, className:string}
+        {children, className}:{children:ReactNode, className?:string}
     ){
     
     return (
