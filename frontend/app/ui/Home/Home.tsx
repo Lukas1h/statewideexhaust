@@ -16,7 +16,7 @@ export default async function Home() {
           <TrustedBy/>
           <Images></Images>
           <WhyChooseUs></WhyChooseUs>
-          <div className="h-[500px]"></div>
+          <div className="h-[100px]"></div>
         </div>
       </div>
       
