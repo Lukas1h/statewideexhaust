@@ -4,6 +4,7 @@ import './globals.css'
 
 import { ReactNode } from "react";
 import { Header } from "./ui/Header";
+import { Footer } from './ui/Footer';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -28,7 +29,7 @@ export default function RootLayout({
             {children}
           </div>
         </main>
-        {/* <Footer /> TODO: Add Footer! */}
+        <Footer />
       </body>
     </html>
   )

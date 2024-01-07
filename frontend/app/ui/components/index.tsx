@@ -1,3 +1,3 @@
 import Card from "./card"
-
-export {Card}
+import CTA from "./cta"
+export {Card,CTA}
