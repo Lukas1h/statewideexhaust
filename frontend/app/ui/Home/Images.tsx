@@ -6,15 +6,13 @@ const hoodImageBaseURL = "/hoods/"
 const cleanImages = [
     "clean.webp",
     "clean4.webp",
-    "clean1.webp",
 ].map((img)=>{
     return hoodImageBaseURL + img
 })
 
 const dirtyImages = [
     "dirty1.webp",
-    "clean2.webp",
-    "dirty2.webp"
+    "dirty2.webp",
 ].map((img)=>{
     return hoodImageBaseURL + img
 })
