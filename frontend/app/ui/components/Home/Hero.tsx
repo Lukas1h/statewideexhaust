@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { CTA } from "../components"
+import { CTA } from "@/app/ui/components";
 
 //Main Hero component that displays hero image and tagline
 export default function Hero() {

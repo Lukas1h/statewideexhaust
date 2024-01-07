@@ -1,5 +1,4 @@
-import { Card } from "../components"
-
+import { Card } from "@/app/ui/components";
 import Image from "next/image"
 
 const hoodImageBaseURL = "/hoods/"

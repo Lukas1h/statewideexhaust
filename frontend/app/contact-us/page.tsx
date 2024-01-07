@@ -1,5 +1,11 @@
+import { Card } from "../ui/components";
+
 export default function ContactUs(){
     return (
-        <p>Contact Us Page</p>
+
+        <Card className="w-full">
+            Heyy
+        </Card>
+
     )
 }

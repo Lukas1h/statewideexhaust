@@ -3,8 +3,7 @@ import { Inter,Assistant } from 'next/font/google'
 import './globals.css'
 
 import { ReactNode } from "react";
-import { Header } from "./ui/Header";
-import { Footer } from './ui/Footer';
+import { Footer,Header } from './ui/components';
 
 
 const inter = Inter({ subsets: ['latin'] })

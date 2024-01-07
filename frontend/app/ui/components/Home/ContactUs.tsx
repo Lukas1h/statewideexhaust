@@ -1,4 +1,4 @@
-import { Card,CTA } from "../components";
+import { CTA } from "@/app/ui/components";
 export default function ContactUs(){
     return (
         <>

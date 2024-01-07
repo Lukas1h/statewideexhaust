@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Card } from "../components"
+import { Card } from "@/app/ui/components";
 
 
 //Array of images and to display

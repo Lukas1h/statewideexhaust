@@ -1,5 +1,4 @@
-import { Card } from "@/app/ui/components";
-import {CTA} from "@/app/ui/components";
+import { Card,CTA } from "@/app/ui/components";
 
 export default function WhyChooseUs(){
     return (
