@@ -29,3 +29,14 @@ em {
   font-weight: 600;
   font-style: normal;
 }
+
+.why-choose-us-card {
+  h2 {
+    font-size: x-large;
+    font-weight: bold;
+  }
+  p {
+    font-size: large;
+    margin-bottom: 12px;
+  }
+}
