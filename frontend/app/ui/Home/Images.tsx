@@ -20,7 +20,7 @@ const dirtyImages = [
 
 export default function Images(){
     return (
-        <Card>
+        <Card className="my-10">
             <h2 className="text-2xl md:text-3xl font-bold text-grey-500 text-center ">Transform your <em className="font-black">nasty</em> kitchen hood from this:</h2>
             <div className="w-full flex flex-wrap items-center justify-center mb-6">
                 {
