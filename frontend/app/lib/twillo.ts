@@ -8,20 +8,16 @@ const authToken = process.env.TWILLO_API_KEY
 const Twillo = CreateTwilloClient(accountSid, authToken);
 
 async function sendSMS(message:string){
-    try {
-        const twilloResponce = await Twillo.messages
-        .create({
-            body: message,
-            from: fromSMS,
-            to: toSMS!
-        })
-        if(twilloResponce.errorMessage){
-            throw twilloResponce.errorMessage
-        }else{
-            console.log("Sent SMS!");
-        }
-    }catch(error){
-        console.error("Failed to send SMS",error)
+    const twilloResponce = await Twillo.messages
+    .create({
+        body: message,
+        from: fromSMS,
+        to: toSMS!
+    })
+    if(twilloResponce.errorMessage){
+        throw twilloResponce.errorMessage
+    }else{
+        console.log("Sent SMS!");
     }
 }
 

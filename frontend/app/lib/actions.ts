@@ -1,7 +1,7 @@
 'use server';
 
 import {sendSMS} from "./twillo";
-
+import { redirect } from 'next/navigation'
 
 
 
@@ -11,4 +11,5 @@ export async function handleContactUs(formData:any){
     }
 
     sendSMS(`Hello from "${parsedFormData.name}".`)
+    redirect("/?contact-successful=true")
 }
