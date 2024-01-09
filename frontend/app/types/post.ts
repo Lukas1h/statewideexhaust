@@ -8,7 +8,5 @@ export interface Post {
     author:{
         _ref:string
     },
-    coverImage:{
-        asset:any
-    }
+    coverImage:any
 }

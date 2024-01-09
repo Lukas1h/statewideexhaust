@@ -1,0 +1,29 @@
+
+.header {
+  /* Sizing & Positioning */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 1000;
+  margin: auto auto;
+  padding-bottom: 35px;
+  
+
+  /* Children */
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+
+  /* Appearance */
+  backdrop-filter: blur(25px);
+  mask: linear-gradient(0deg, transparent 0%, black 30%);
+
+  /* Trying to remove blur flickering */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  overflow: hidden;
+  will-change:top;
+
+
+}

@@ -1,3 +1,9 @@
-import Card from "./card"
+import Card from "./Card"
+import CTA from "./CTA"
+import Footer from "./Footer"
+import Header from "./Header"
+import Popup from "./Popup"
+import {TrustedBy, Images, WhyChooseUs, ContactUs, Hero} from "./Home"
+import { ContactForm,SubmitButton } from "./ContactUs"
 
-export {Card}
+export {Card, CTA, Footer, Header,TrustedBy, Images, WhyChooseUs, ContactUs, Hero, ContactForm, SubmitButton, Popup}
