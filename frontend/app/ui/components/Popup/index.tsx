@@ -26,7 +26,7 @@ export default function Popup(
     function closePopup(){
         const newParams = new URLSearchParams(searchParams.toString())
         newParams.set(paramName,"false")
-        router.push(pathname + '?' + newParams.toString()) //TODO: change to replace
+        router.replace(pathname + '?' + newParams.toString()) //TODO: change to replace
     }
     
     return (
@@ -38,7 +38,7 @@ export default function Popup(
             <div className="bg-white p-8 max-w-md mx-auto rounded-lg z-10">
             <p className="text-lg font-semibold mb-4">{message.header}</p>
             <p className="text-gray-700">{message.body}</p>
-            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded focus:outline-none focus:shadow-outline-blue" onClick={closePopup}>Close</button>
+            <button className="mt-4 bg-gradient-to-r from-red-500 to-red-600 hover:shadow-md transition-all text-white font-bold px-4 py-2 rounded focus:outline-none focus:shadow-outline-blue" onClick={closePopup}>Close</button>
             </div>
         </div>
     )

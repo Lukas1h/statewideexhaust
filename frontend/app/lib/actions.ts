@@ -11,5 +11,5 @@ export async function handleContactUs(formData:any){
     }
 
     sendSMS(`Hello from "${parsedFormData.name}".`)
-    redirect("/?contact-successful=true")
+    redirect("/?show-contact-successful=true")
 }

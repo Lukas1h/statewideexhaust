@@ -10,7 +10,6 @@ export default async function Home() {
      <>
       <div className="home-background-container">
         <div className="home-background">
-        <Popup message="Heyyy" paramName="contact-successful"></Popup>
           <Hero/>
           <TrustedBy/>
           <Images></Images>

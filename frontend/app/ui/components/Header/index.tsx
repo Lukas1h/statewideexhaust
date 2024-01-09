@@ -1,6 +1,7 @@
 'use client';
 import Link from "next/link";
 import { usePathname } from "next/navigation"
+import Image from "next/image";
 import "./styles.css"
 
 
@@ -25,11 +26,15 @@ export default function Header(){
             <div className="max-w-[60rem] flex items-center justify-between w-full header-inner">
                 <Link
                     href={"/"}
-                    className="font-bold text-2xl text-grey-500"
+                    className="font-bold text-2xl text-grey-500 flex space-x-2"
                 >
-                    Home
+                    <img
+                        src={"/logo-w-text.png"}
+                        height={200}
+                        className="max-h-11"
+                    />
                 </Link>
-                <div className="flex">
+                <div className="flex shrink-0">
                     {
                         links.map((link)=>{
                             return (
