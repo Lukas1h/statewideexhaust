@@ -32,6 +32,7 @@ export default function Header(){
                         src={"/logo-w-text.png"}
                         height={200}
                         className="max-h-11"
+                        alt="Image of company logo"
                     />
                 </Link>
                 <div className="flex shrink-0">

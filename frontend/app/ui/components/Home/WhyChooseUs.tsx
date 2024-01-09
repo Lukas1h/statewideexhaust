@@ -9,9 +9,9 @@ export default function WhyChooseUs(){
             <p>We pride ourselves on giving our customers the quality hood cleaning services that they deserve.</p>
 
             <h2>Over 30 years of expert experience.</h2>
-            <p>We are among the few with a combined three decades of experience. Just as important, we haven't lost our passion for providing that quality hood cleaning service you need in the state of Oregon.</p>
+            <p>We are among the few with a combined three decades of experience. Just as important, we haven&apos;t lost our passion for providing that quality hood cleaning service you need in the state of Oregon.</p>
 
-            <h2>Cuttin' grease the NFPA way.</h2>
+            <h2>Cuttin&apos; grease the NFPA way.</h2>
             <p>When we clean your hoods, we make sure that all of the NFPA standards are followed to ensure the safety of your restaurant.</p>
 
             <h2>We provide service to Western Oregon</h2>
