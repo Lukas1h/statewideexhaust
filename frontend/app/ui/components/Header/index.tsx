@@ -7,14 +7,18 @@ import "./styles.css"
 
 const links = [
     {
-        href:"/blog",
-        title:"Blog"
-    },
-    {
         href:"/contact-us",
         title:"Contact Us"
     }
 ]
+
+//Blog is disabled in production rn
+if(process.env.VERCEL_ENV != "production"){
+    links.unshift({
+        href:"/blog",
+        title:"Blog"
+    })
+}
 
 export default function Header(){
     const pathname = usePathname()
@@ -41,7 +45,7 @@ export default function Header(){
                             return (
                                 <Link 
                                     key={link.href}
-                                    className={`transition-all ${pathname.startsWith(link.href) ? "bg-gradient-to-r from-red-500 to-red-600" : "bg-gradient-to-r from-orange-600 to-orange-500"}  text-white font-bold py-2 px-4 rounded-full mx-2 md:mx-4 text-xs md:text-sm`}
+                                    className={`transition-all ${pathname.startsWith(link.href) ? "bg-gradient-to-r from-red-800 to-red-800" : "bg-gradient-to-r from-red-500 to-red-600"}  text-white font-bold py-2 px-4 rounded-full mx-2 md:mx-4 text-xs md:text-sm`}
                                     href={link.href}
                                 >
                                     {link.title}

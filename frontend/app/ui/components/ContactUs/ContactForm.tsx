@@ -21,8 +21,18 @@ export default function ContactForm(){
           </div>
 
           <div className="mb-4">
+            <label htmlFor="companyName" className="block text-gray-700 text-sm font-bold mb-2">Company Name</label>
+            <input type="tecompanyNamext" id="companyName" name="companyName" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-red-500" required />
+          </div>
+
+          <div className="mb-4">
             <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">Email</label>
             <input type="email" id="email" name="email" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-red-500" required />
+          </div>
+
+          <div className="mb-4">
+            <label htmlFor="phone" className="block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
+            <input type="phone" id="phone" name="phone" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-red-500" required />
           </div>
 
           <div className="mb-4">

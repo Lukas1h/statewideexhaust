@@ -1,4 +1,4 @@
-import {Hero,TrustedBy,Images,WhyChooseUs,ContactUs} from "@/app/ui/components"
+import {Hero,TrustedBy,Images,WhyChooseUs,ContactUs,Services} from "@/app/ui/components"
 import {Popup} from "@/app/ui/components"
 
 
@@ -14,6 +14,7 @@ export default async function Home() {
           <TrustedBy/>
           <Images></Images>
           <WhyChooseUs></WhyChooseUs>
+          <Services></Services>
           {/* <ContactUs></ContactUs> */}
           <div className="h-[100px]"></div>
         </div>
