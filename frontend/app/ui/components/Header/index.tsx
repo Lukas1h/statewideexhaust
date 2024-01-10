@@ -7,18 +7,22 @@ import "./styles.css"
 
 const links = [
     {
+        href:"/blog",
+        title:"Blog"
+    },
+    {
         href:"/contact-us",
         title:"Contact Us"
     }
 ]
 
-//Blog is disabled in production rn
-if(process.env.VERCEL_ENV != "production"){
-    links.unshift({
-        href:"/blog",
-        title:"Blog"
-    })
-}
+//Blog is disabled in production rn.
+// if(process.env.VERCEL_ENV != "production"){
+//     links.unshift({
+//         href:"/blog",
+//         title:"Blog"
+//     })
+// }
 
 export default function Header(){
     const pathname = usePathname()
