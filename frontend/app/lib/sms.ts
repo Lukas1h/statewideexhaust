@@ -22,5 +22,4 @@ async function sendSMS(message:string){
     }
 }
 
-export default Twillo
 export {sendSMS}
