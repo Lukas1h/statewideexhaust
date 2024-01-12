@@ -1,7 +1,6 @@
 # Statewide Exhaust Website
 
 ### Todo
-- Add analytics
 - Add metadata
 - Add SEO stuff
 - Style Blog routes
