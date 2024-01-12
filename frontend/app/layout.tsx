@@ -27,8 +27,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main className="flex min-h-screen flex-col items-center justify-between">
-          <div className="max-w-4xl m-2  ">
+        <main className="flex min-h-screen flex-col items-center justify-betwee min-w-screen">
+          <div className="w-full max-w-4xl m-2">
             {children}
           </div>
         </main>

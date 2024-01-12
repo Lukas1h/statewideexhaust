@@ -1,6 +1,7 @@
 export interface Post {
     title:string,
     content:any[],
+    excerpt:string
     slug:{
         current:string
     },
