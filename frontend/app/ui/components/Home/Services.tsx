@@ -17,7 +17,7 @@ export default function Services(){
                             height={600}
                             className="rounded-md"
                         />
-                        <p className="font-bold">Before</p>
+                        <figcaption className="font-bold">Before</figcaption>
                     </div>
                     <div className="m-2 flex flex-col">
                         <Image 
@@ -27,7 +27,7 @@ export default function Services(){
                             height={600}
                             className="rounded-md"
                         />
-                        <p className="font-bold">After</p>
+                        <figcaption className="font-bold">After</figcaption>
                     </div>
                 </div>
                 <div className="mx-2 mb-8 text-lg">
@@ -46,7 +46,7 @@ export default function Services(){
                             height={428}
                             className="rounded-md w-full"
                         />
-                        <p className="font-bold w-full text-center">Hood Filter</p>
+                        <figcaption className="font-bold w-full text-center">Hood Filter</figcaption>
                     </div>
                 </div>
                 <div className="mx-2 text-lg mb-8">
@@ -66,7 +66,7 @@ export default function Services(){
                             height={600}
                             className="rounded-md"
                         />
-                        <p className="font-bold">Hood Globes</p>
+                        <figcaption className="font-bold">Hood Globes</figcaption>
                     </div>
                     <div className="m-2 flex flex-col">
                         <Image 
@@ -76,7 +76,7 @@ export default function Services(){
                             height={600}
                             className="rounded-md"
                         />
-                        <p className="font-bold">Hood Equipment</p>
+                        <figcaption className="font-bold">Hood Equipment</figcaption>
                     </div>
                 </div>
                 <div className="mx-2 mb-8 text-lg">
@@ -96,7 +96,7 @@ export default function Services(){
                             height={600}
                             className="rounded-md"
                         />
-                        <p className="font-bold">Hinge Kit</p>
+                        <figcaption className="font-bold">Hinge Kit</figcaption>
                     </div>
                     <div className="m-2 flex flex-col">
                         <Image 
@@ -106,7 +106,7 @@ export default function Services(){
                             height={600}
                             className="rounded-md"
                         />
-                        <p className="font-bold">Hinge Kit</p>
+                        <figcaption className="font-bold">Hinge Kit</figcaption>
                     </div>
                 </div>
                 <div className="mx-2 text-lg">
