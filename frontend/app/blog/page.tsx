@@ -3,6 +3,10 @@ import { fetchAllPosts } from "../lib/sanity";
 import { Post } from "../types/post";
 import Link from "next/link";
 
+export const metadata = {
+    title: "Blog"
+}
+
 export default async function Blog(){
     
     return (

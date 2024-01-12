@@ -1,7 +1,13 @@
-"use client";
+
 import { Card } from "../ui/components";
 import {ContactForm} from "@/app/ui/components"
 import Link from "next/link";
+
+
+export const metadata = {
+    title: "Contact Us"
+}
+
 
 export default function ContactUs(){
     return (

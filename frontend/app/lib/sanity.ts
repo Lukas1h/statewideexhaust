@@ -31,3 +31,12 @@ export async function fetchPostBySlug(slug:string): Promise<Post> {
     `, { slug })
     return posts[0]
 }
+
+export async function fetchPostTitleBySlug(slug:string): Promise<string> {
+  const posts = await client.fetch<Post[]>(`
+    *[_type == "post" && slug.current == $slug]{
+      title
+    }
+  `, { slug })
+  return posts[0].title
+}

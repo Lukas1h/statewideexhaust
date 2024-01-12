@@ -1,9 +1,9 @@
-import { fetchPostBySlug } from "@/app/lib/sanity"
+import { fetchPostBySlug,fetchPostTitleBySlug } from "@/app/lib/sanity"
 import { notFound } from "next/navigation"
 import {PortableText} from '@portabletext/react'
 import Image from "next/image";
+import { Metadata } from "next";
 import "./styles.css"
-
 
 
 //TODO: Move this to a folder in the UI folder or the util folder
@@ -26,7 +26,16 @@ const toBase64 = (str: string) =>
     ? Buffer.from(str).toString('base64')
     : window.btoa(str)
 
-
+export async function generateMetadata({params}:{params:{slug:string}}): Promise<Metadata> {
+  // read route params
+  const postSlug = params.slug
+  const postTitle = await fetchPostTitleBySlug(postSlug)
+  console.log("Got title",postTitle)
+  
+  return {
+    title: postTitle,
+  }
+}
 
 
 
