@@ -110,7 +110,7 @@ export default function Services(){
                     </div>
                 </div>
                 <div className="mx-2 text-lg">
-                    <p>Statewide installs and sales roof top exhaust fan hinge kits.  <Link className="underline font-semibold" href={"/contact-us"}>Contact Us</Link> for pricing.</p>
+                    <p>Statewide installs and sells roof top exhaust fan hinge kits.  <Link className="underline font-semibold" href={"/contact-us"}>Contact Us</Link> for pricing.</p>
                 </div>
             </div>
 

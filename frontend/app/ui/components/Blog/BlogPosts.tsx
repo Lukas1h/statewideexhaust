@@ -3,6 +3,7 @@ import { fetchAllPosts } from "@/app/lib/sanity";
 import Image from "next/image";
 import { Post } from "@/app/types/post";
 import Link from "next/link";
+import { Card } from "..";
 
 export default async function BlogPosts(){
     const posts = await fetchAllPosts()
