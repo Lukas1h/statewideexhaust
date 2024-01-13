@@ -49,7 +49,7 @@ export default async function Page({params}:{params:{slug:string}}) {
     
 
     return (
-        <div>
+        <div className="bg-gray-50rounded-md">
             <Image
                 src={image.url}
                 height={image.metadata.dimensions.height}
@@ -58,6 +58,14 @@ export default async function Page({params}:{params:{slug:string}}) {
                 placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(1000, 1000))}`}
                 className="rounded-md"
             />
+            <div className="text-center mx-4 mt-8 mb-4">
+              <h1 className="text-4xl font-medium">{post.title}</h1>
+              <h2 className="text font-medium">By {post.author.name} · {new Date(post.publishedAt).toLocaleDateString('en-US', {
+  day: 'numeric',
+  month: 'short',
+  year: 'numeric',
+})}</h2>
+            </div>
             <div className="body-text">
                 <PortableText value={post.content}></PortableText>
             </div>

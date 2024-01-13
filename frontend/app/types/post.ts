@@ -7,7 +7,8 @@ export interface Post {
     },
     publishedAt: string,
     author:{
-        _ref:string
+        name:string,
+        badge:string
     },
     coverImage:any
 }
