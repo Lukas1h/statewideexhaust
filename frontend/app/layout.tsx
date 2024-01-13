@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: 'Statewide Exhaust Services - Professional Hood Cleaning All Throughout Western Oregon',
   },
   description: 'Statewide Exhaust Services provides unparalleled quality hood cleaning services throughout western oregon.',
-  // metadataBase: new URL('https://statewideexhaustservices.com'),
+  metadataBase: new URL('https://statewideexhaustservices.com'),
 };
 
 const inter = Inter({ subsets: ['latin'] })
