@@ -17,7 +17,7 @@ export default function Services(){
                             height={600}
                             className="rounded-md"
                         />
-                        <caption className="font-bold">Before</caption>
+                        <figcaption className="font-bold">Before</figcaption>
                     </div>
                     <div className="m-2 flex flex-col">
                         <Image 
@@ -27,7 +27,7 @@ export default function Services(){
                             height={600}
                             className="rounded-md"
                         />
-                        <caption className="font-bold">After</caption>
+                        <figcaption className="font-bold">After</figcaption>
                     </div>
                 </div>
                 <div className="mx-2 mb-8 text-lg">
@@ -46,7 +46,7 @@ export default function Services(){
                             height={428}
                             className="rounded-md w-full"
                         />
-                        <caption className="font-bold w-full text-center">Hood Filter</caption>
+                        <figcaption className="font-bold w-full text-center">Hood Filter</figcaption>
                     </div>
                 </div>
                 <div className="mx-2 text-lg mb-8">
@@ -66,7 +66,7 @@ export default function Services(){
                             height={600}
                             className="rounded-md"
                         />
-                        <caption className="font-bold">Hood Globes</caption>
+                        <figcaption className="font-bold">Hood Globes</figcaption>
                     </div>
                     <div className="m-2 flex flex-col">
                         <Image 
@@ -76,7 +76,7 @@ export default function Services(){
                             height={600}
                             className="rounded-md"
                         />
-                        <caption className="font-bold">Hood Equipment</caption>
+                        <figcaption className="font-bold">Hood Equipment</figcaption>
                     </div>
                 </div>
                 <div className="mx-2 mb-8 text-lg">
@@ -96,7 +96,7 @@ export default function Services(){
                             height={600}
                             className="rounded-md"
                         />
-                        <caption className="font-bold">Hinge Kit</caption>
+                        <figcaption className="font-bold">Hinge Kit</figcaption>
                     </div>
                     <div className="m-2 flex flex-col">
                         <Image 
@@ -106,11 +106,11 @@ export default function Services(){
                             height={600}
                             className="rounded-md"
                         />
-                        <caption className="font-bold">Hinge Kit</caption>
+                        <figcaption className="font-bold">Hinge Kit</figcaption>
                     </div>
                 </div>
                 <div className="mx-2 text-lg">
-                    <p>Statewide installs and sales roof top exhaust fan hinge kits.  <Link className="underline font-semibold" href={"/contact-us"}>Contact Us</Link> for pricing.</p>
+                    <p>Statewide installs and sells roof top exhaust fan hinge kits.  <Link className="underline font-semibold" href={"/contact-us"}>Contact Us</Link> for pricing.</p>
                 </div>
             </div>
 

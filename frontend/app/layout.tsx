@@ -1,18 +1,22 @@
-import type { Metadata } from 'next'
 import { Inter,Assistant } from 'next/font/google'
 import './globals.css'
 import {Popup} from './ui/components';
 import { ReactNode } from "react";
 import { Footer,Header } from './ui/components';
-
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Statewide Exhaust Services',
+    default: 'Statewide Exhaust Services - Professional Hood Cleaning All Throughout Western Oregon',
+  },
+  description: 'Statewide Exhaust Services provides unparalleled quality hood cleaning services throughout western oregon.',
+  // metadataBase: new URL('https://statewideexhaustservices.com'),
+};
 
 const inter = Inter({ subsets: ['latin'] })
 const assistant = Assistant({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Statewide Exhaust Hood Cleaners',
-  description: 'Statewide Exhaust Hood Cleaners provide unparalleled quality hood cleaning services throughout western oregon.',
-}
 
 export default function RootLayout({
   children,
@@ -23,8 +27,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main className="flex min-h-screen flex-col items-center justify-between">
-          <div className="max-w-4xl m-2  ">
+        <main className="flex min-h-screen flex-col items-center justify-betwee min-w-screen">
+          <div className="w-full max-w-4xl m-2">
             {children}
           </div>
         </main>

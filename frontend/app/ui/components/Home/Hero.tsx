@@ -8,7 +8,7 @@ export default function Hero() {
         <>
             <div className="flex flex-col items-center my-8">
                 <Image
-                    src="/logo-w-text.png"
+                    src="/logo-w-text.webp"
                     width="2174"
                     height="722"
                     alt="Hero Image"

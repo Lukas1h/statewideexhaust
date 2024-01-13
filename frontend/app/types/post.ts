@@ -1,12 +1,14 @@
 export interface Post {
     title:string,
     content:any[],
+    excerpt:string
     slug:{
         current:string
     },
     publishedAt: string,
     author:{
-        _ref:string
+        name:string,
+        badge:string
     },
     coverImage:any
 }

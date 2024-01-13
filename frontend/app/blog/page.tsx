@@ -2,23 +2,23 @@ import { Suspense } from "react";
 import { fetchAllPosts } from "../lib/sanity";
 import { Post } from "../types/post";
 import Link from "next/link";
+import { BlogPosts } from "../ui/components";
+
+export const metadata = {
+    title: "Blog"
+}
 
 export default async function Blog(){
     
     return (
-        <Suspense>
-            <ListBlogPosts/>
-        </Suspense>
+        <>
+        
+            <h2 className="text-2xl md:text-3xl font-bold text-grey-500 text-center mb-4 ">Recent Posts</h2>
+            <Suspense>
+                <BlogPosts/>
+            </Suspense>
+
+        </>
     )
 }
 
-async function ListBlogPosts(){
-    const posts = await fetchAllPosts()
-    return (
-        <>
-            {posts.map((post)=>{
-                return <Link key={post.slug.current} href={`/blog/${post.slug.current}`}>{post.title}</Link>
-            })}
-        </> 
-    )
-}

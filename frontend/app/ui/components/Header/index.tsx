@@ -37,7 +37,7 @@ export default function Header(){
                     className="font-bold text-2xl text-grey-500 flex space-x-2"
                 >
                     <img
-                        src={"/logo-w-text.png"}
+                        src={"/logo-w-text.webp"}
                         height={200}
                         className="max-h-11"
                         alt="Image of company logo"
