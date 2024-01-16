@@ -8,7 +8,7 @@ import { Card } from "..";
 export default async function BlogPosts(){
     const posts = await fetchAllPosts()
     return (
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-2">
             {posts.map((post)=>{
               return (
                 <a className=" rounded-xl overflow-hidden shadow-md m-1 " href={`/blog/${post.slug.current}`} key={post.slug.current}>
