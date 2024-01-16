@@ -6,20 +6,20 @@ import { Footer,Header } from './ui/components';
 import { Metadata } from 'next';
 import Head from 'next/head'
  
-// export const metadata: Metadata = {
-//   title: {
-//     template: '%s | Statewide Exhaust Services',
-//     default: 'Statewide Exhaust Services - Professional Hood Cleaning All Throughout Western Oregon',
-//   },
-//   description: 'Statewide Exhaust Services provides unparalleled quality hood cleaning services throughout western oregon.',
-//   metadataBase: new URL('https://www.statewideexhaustservices.com'),
-//   openGraph: {
-//     images: 'opengraph.png',
-//   },
-//   twitter:{
-//     images:'opengraph.png',
-//   }
-// };
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Statewide Exhaust Services',
+    default: 'Statewide Exhaust Services - Professional Hood Cleaning All Throughout Western Oregon',
+  },
+  description: 'Statewide Exhaust Services provides unparalleled quality hood cleaning services throughout western oregon. Contact us now for a free quote!',
+  metadataBase: new URL('https://www.statewideexhaustservices.com'),
+  openGraph: {
+    images: 'opengraph.png',
+  },
+  twitter:{
+    images:'opengraph.png',
+  }
+};
 
 const inter = Inter({ subsets: ['latin'] })
 const assistant = Assistant({ subsets: ['latin'] })
