@@ -6,6 +6,8 @@ import { Metadata } from "next";
 import "./styles.css"
 
 
+
+
 //TODO: Move this to a folder in the UI folder or the util folder
 const shimmer = (w: number, h: number) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -29,11 +31,19 @@ const toBase64 = (str: string) =>
 export async function generateMetadata({params}:{params:{slug:string}}): Promise<Metadata> {
   // read route params
   const postSlug = params.slug
-  const postTitle = await fetchPostTitleBySlug(postSlug)
-  console.log("Got title",postTitle)
+  const post = await fetchPostBySlug(postSlug)
+  console.log("Got title",post.title)
   
   return {
-    title: postTitle,
+    title: post.title,
+    description: post.excerpt,
+    metadataBase: new URL('https://www.statewideexhaustservices.com'),
+    openGraph: {
+      images: `/opengraph.png`, //`/blog/${params.slug}/opengraph`, 
+    },
+    twitter:{
+      images: `/opengraph.png`, //`/blog/${params.slug}/opengraph`,
+    }
   }
 }
 
