@@ -1,4 +1,6 @@
 import { Card,CTA } from "@/app/ui/components";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function WhyChooseUs(){
     return (
@@ -15,7 +17,13 @@ export default function WhyChooseUs(){
             <p>When we clean your hoods, we make sure that all of the NFPA standards are followed to ensure the safety of your restaurant.</p>
 
             <h2>We provide service to Western Oregon</h2>
-            <p>Including the cities of Eugene, Springfield, Roseburg, Coos Bay, Medford, Grants Pass, Brookings, and their surroundings. For cities not listed, call for details.</p>
+            <p>Including the cities of Eugene, Springfield, Roseburg, Coos Bay, Medford, Grants Pass, and their surroundings. For cities not listed, call for details.</p>
+
+            <p className="text-grey-500 text-xs">
+                Contact <Link href={"https://silverliningcleaners.com/"} className="font-bold underline underline-offset-2"> Silver Lining Hood Cleaners</Link> for Portland area.
+            </p>
+
+
         </Card>
         </>
     )
