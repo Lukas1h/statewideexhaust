@@ -1,7 +1,7 @@
 import { Inter, Assistant } from "next/font/google";
 import "./globals.css";
 import { Popup } from "./ui/components";
-import { ReactNode } from "react";
+import { ReactNode, Suspense } from "react";
 import { Footer, Header } from "./ui/components";
 import { Metadata } from "next";
 import Head from "next/head";
@@ -53,13 +53,15 @@ export default function RootLayout({
         </main>
         <Footer />
         {/* Popups TODO: Move this to a better spot.*/}
-        <Popup
-          message={{
-            header: "Thanks.",
-            body: "We'll be in touch with you soon!",
-          }}
-          paramName="show-contact-successful"
-        />
+        <Suspense>
+          <Popup
+            message={{
+              header: "Thanks.",
+              body: "We'll be in touch with you soon!",
+            }}
+            paramName="show-contact-successful"
+          />
+        </Suspense>
       </body>
     </html>
   );
