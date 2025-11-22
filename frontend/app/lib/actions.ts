@@ -1,19 +1,21 @@
 'use server';
 
-import {sendSMS} from "./sms";
-import {sendEmail} from "./email"
+import { sendSMS } from "./sms";
+import { sendEmail } from "./email"
 import { redirect } from 'next/navigation'
 
 
 
-export async function handleContactUs(formData:any){
+export async function handleContactUs(formData: any) {
+
+    // return true
     const parsedFormData = {
-        name:formData.get("name"),
-        companyName:formData.get("companyName"),
-        email:formData.get("email"),
-        phone:formData.get("phone"),
-        location:formData.get("location"),
-        message:formData.get("message"),
+        name: formData.get("name"),
+        companyName: formData.get("companyName"),
+        email: formData.get("email"),
+        phone: formData.get("phone"),
+        location: formData.get("location"),
+        message: formData.get("message"),
     }
 
     const message = `
@@ -25,7 +27,7 @@ export async function handleContactUs(formData:any){
 
     Reply STOP to unsubscribe.`
 
-    sendSMS(`New contact form submission from ${parsedFormData.name} at ${parsedFormData.companyName}. Check your email to view the details.`)
+    // sendSMS(`New contact form submission from ${parsedFormData.name} at ${parsedFormData.companyName}. Check your email to view the details.`)
     sendEmail(message)
     redirect("/?show-contact-successful=true")
 }
