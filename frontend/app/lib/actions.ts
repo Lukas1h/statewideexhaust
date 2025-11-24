@@ -28,6 +28,6 @@ export async function handleContactUs(formData: any) {
     Reply STOP to unsubscribe.`
 
     // sendSMS(`New contact form submission from ${parsedFormData.name} at ${parsedFormData.companyName}. Check your email to view the details.`)
-    sendEmail(message)
+    await sendEmail(message)
     redirect("/?show-contact-successful=true")
 }
