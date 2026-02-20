@@ -16,7 +16,7 @@ export default function Hero() {
                     priority
                 />
                 <h1 className="text-2xl md:text-3xl font-light mt-4 text-center"><span className=" font-bold">{"#1"} Trusted Hood Cleaners</span><br />
-                    In the <span className="font-bold">Eugene</span> / <span className="font-bold">Springfield</span> / <span className="font-bold">Roseburg</span> Area
+                    In the <Link href="/locations/eugene" className="font-bold underline">Eugene</Link> / <Link href="/locations/eugene" className="font-bold underline">Springfield</Link> / <Link href="/locations/roseburg" className="font-bold underline">Roseburg</Link> Area
                 </h1>
                 <CTA></CTA>
             </div >

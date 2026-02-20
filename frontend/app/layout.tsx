@@ -51,7 +51,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         <main className="flex min-h-screen flex-col items-center justify-betwee min-w-screen">
-          <div className="w-fulls m-2">{children}</div>
+          <div className="w-full">{children}</div>
         </main>
         <Footer />
         {/* Popups TODO: Move this to a better spot.*/}
