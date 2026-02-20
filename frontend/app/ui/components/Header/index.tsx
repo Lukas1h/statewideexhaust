@@ -44,7 +44,7 @@ export default function Header() {
                     <Link
 
                         className={`transition-all text-gray-900 font-bold py-2 px-4 rounded-full text-md md:text-lg  `}
-                        href={"#services"}
+                        href={"/#services"}
                     >
                         {"Services"}
                     </Link>
