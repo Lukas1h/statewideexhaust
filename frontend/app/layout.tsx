@@ -6,14 +6,16 @@ import { Footer, Header } from "./ui/components";
 import { Metadata } from "next";
 import Head from "next/head";
 
+
+
 export const metadata: Metadata = {
   title: {
     template: "%s | Statewide Exhaust Services",
     default:
-      "Professinal Hood Cleaning in Eugene / Springfield / Roseburg | Statewide Exhaust Services",
+      "Statewide Hood Cleaning In Eugene / Springfield / Roseburg",
   },
   description:
-    "Statewide Exhaust Services provides unparalleled quality hood cleaning services throughout western oregon. Contact us now for a free quote!",
+    "NFPA-certified kitchen exhaust hood cleaning in Oregon. Family-owned and operated. Proudly serving Eugene, Springfield, and Roseburg for 20 years.",
   metadataBase: new URL("https://www.statewideexhaustservices.com"),
   openGraph: {
     images: "opengraph.png",
