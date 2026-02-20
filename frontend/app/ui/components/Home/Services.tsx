@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Services(){
     return (
         <>
-        <h1 className="text-3xl md:text-5xl font-bold text-grey-500 text-center mt-8 mb-2 items-left">Services</h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-grey-500 text-center mt-8 mb-2 items-left" id="services">Services</h1>
         <Card className="services-card">
             <div className="flex flex-col items-center justify-center ">
                 <h2 className="text-2xl font-bold text-center text-grey-500">Kitchen Exhaust Hood Cleaning and Grease Removal</h2>

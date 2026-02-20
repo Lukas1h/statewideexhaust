@@ -10,35 +10,35 @@ const sentFrom = new Sender(process.env.FROM_EMAIL!, "Statewide Exhaust Services
 
 //TODO: Comment out lines for SMS when Mailersend account is verified.
 const recipients = [
-new Recipient(process.env.TO_EMAIL!, "Gary Hahn"),
-// new Recipient(`${process.env.TO_EMAIL!}@email.uscc.net`, "Gary Hahn"), 
+    new Recipient(process.env.TO_EMAIL!, "Gary Hahn"),
+    // new Recipient(`${process.env.TO_EMAIL!}@email.uscc.net`, "Gary Hahn"), 
 ];
 
 const devRecipients = [
-new Recipient(process.env.TO_EMAIL_DEV!, "Lukas Hahn"),
-// new Recipient(`${process.env.TO_SMS_DEV!}@email.uscc.net`, "Lukas Hahn"),
+    new Recipient(process.env.TO_EMAIL_DEV!, "Lukas Hahn"),
+    // new Recipient(`${process.env.TO_SMS_DEV!}@email.uscc.net`, "Lukas Hahn"),
 ];
 
 
 
 
 
-async function sendEmail(message:string){
-   
+async function sendEmail(message: string) {
 
+    let to = process.env.VERCEL_ENV == "production" ? recipients : devRecipients
     const emailParams = new EmailParams()
-    .setFrom(sentFrom)
-    .setTo(process.env.VERCEL_ENV == "production" ? recipients : devRecipients)
-    .setReplyTo(sentFrom)
-    .setSubject("New Contact From Submision on \"statewideexhaustservices.com\"")
-    .setHtml(`<p>${message}</p>`) 
-    .setText(message);
+        .setFrom(sentFrom)
+        .setTo(to)
+        .setReplyTo(sentFrom)
+        .setSubject("New Contact From Submision on \"statewideexhaustservices.com\"")
+        .setHtml(`<p>${message}</p>`)
+        .setText(message);
 
     await mailerSend.email.send(emailParams);
-    console.log(`Sent email(s) to ${("production" ? recipients : devRecipients).map((r)=>{return r.email}).join(", ")}`);
-    
+    console.log(`Sent email(s) to ${to.map((e) => { e.email }).join(", ")}.`);
+
 
 }
-export {sendEmail}
+export { sendEmail }
 
 //@1OU982.]9L84.2R

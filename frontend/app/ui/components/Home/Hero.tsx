@@ -6,7 +6,7 @@ import { CTA } from "@/app/ui/components";
 export default function Hero() {
     return (
         <>
-            <div className="flex flex-col items-center my-8 mx-1">
+            <div className="flex flex-col items-center my-8 mx-4 max-w-4xl">
                 <Image
                     src="/logo-w-text.webp"
                     width="2174"
@@ -15,9 +15,11 @@ export default function Hero() {
                     className=""
                     priority
                 />
-                <h1 className="text-2xl md:text-3xl font-light mt-4 text-center">Where <em>Unparalleled Quality</em> Meets <em>Spectacular Service</em></h1>
+                <h1 className="text-2xl md:text-3xl font-light mt-4 text-center"><span className=" font-bold">{"#1"} Trusted Hood Cleaners</span><br />
+                    In the <span className="font-bold">Eugene</span> / <span className="font-bold">Springfield</span> / <span className="font-bold">Roseburg</span> Area
+                </h1>
                 <CTA></CTA>
-            </div>
+            </div >
         </>
     )
 }

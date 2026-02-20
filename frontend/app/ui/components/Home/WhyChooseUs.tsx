@@ -1,30 +1,40 @@
-import { Card,CTA } from "@/app/ui/components";
+import { Card, CTA } from "@/app/ui/components";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function WhyChooseUs(){
+export default function WhyChooseUs() {
     return (
         <>
-        <h1 className="text-3xl md:text-5xl font-bold text-grey-500 text-center mt-8 mb-2 items-left">Why Choose Us?</h1>
-        <Card className="why-choose-us-card">
-            <h2>Quality service you can count on.</h2>
-            <p>We pride ourselves on giving our customers the quality hood cleaning services that they deserve.</p>
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-black text-center mt-10 mb-6">Why Choose Us?</h1>
+            <Card className="why-choose-us-card rounded-none max-w-none w-screen m-0 p-0 mb-24">
+                <div className="max-w-6xl flex flex-col md:flex-row gap-2 mx-auto">
 
-            <h2>Over 30 years of expert experience.</h2>
-            <p>We are among the few with a combined three decades of experience. Just as important, we haven&apos;t lost our passion for providing that quality hood cleaning service you need in the state of Oregon.</p>
+                    <div className="flex-1 mb-4 md:mb-0 text-center md:text-left max-w-[500px] mx-auto">
+                        <h2 className="text-black text-2xl font-bold tracking-wide mb-2">Serving <span className="underline">Eugene</span> for Over 20 Years</h2>
+                        <p className="text-gray-700 leading-relaxed text-base">Statewide Exhaust Hood Cleaning has proudly served Eugene and the surrounding communities for more than two decades. We understand the needs of local restaurants and deliver dependable, thorough hood cleaning you can count on.</p>
 
-            <h2>Cuttin&apos; grease the NFPA way.</h2>
-            <p>When we clean your hoods, we make sure that all of the NFPA standards are followed to ensure the safety of your restaurant.</p>
+                    </div>
+                    <div className="flex-1 mb-4 md:mb-0 text-center md:text-left max-w-[500px] mx-auto">
+                        <h2 className="text-black text-2xl font-bold tracking-wide  mb-2"><span className="underline">NFPA Certified</span> & Code Compliant</h2>
+                        <p className="text-gray-700 leading-relaxed text-base">We are NFPA certified and clean to the highest industry standards. Every service is performed with strict attention to fire safety codes, helping protect your kitchen, your staff, and your investment.</p>
+                    </div>
+                    <div className="flex-1 text-center md:text-left max-w-[500px] mx-auto">
+                        <h2 className="text-black text-2xl font-bold tracking-wide  mb-2"><span className="underline">Family-Owned.</span> Quality You Can See.</h2>
+                        <p className="text-gray-700 leading-relaxed text-base">As a family-owned and operated company, we focus on quality and personal service that larger companies often overlook. When you hire us, you work directly with professionals who take pride in every job and stand behind their work.</p>
 
-            <h2>We provide service to Western Oregon</h2>
-            <p>Including the cities of Eugene, Springfield, Roseburg, Coos Bay, Medford, Grants Pass, and their surroundings. For cities not listed, call for details.</p>
-
-            <p className="text-grey-500 text-xs">
-                Contact <Link href={"https://silverliningcleaners.com/"} className="font-bold underline underline-offset-2"> Silver Lining Hood Cleaners</Link> for Portland area.
-            </p>
+                    </div>
 
 
-        </Card>
+
+
+
+
+                </div>
+                <p className="text-grey-500 text-sm w-full text-center mt-3 mb-[-1rem]">
+                    Contact <Link href={"https://silverliningcleaners.com/"} className="font-bold underline underline-offset-2"> Silver Lining Hood Cleaners</Link> for Portland area.
+                </p>
+
+            </Card>
         </>
     )
 }
