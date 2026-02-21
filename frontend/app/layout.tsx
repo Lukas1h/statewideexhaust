@@ -15,81 +15,18 @@ const structuredData = {
   description:
     "NFPA-certified kitchen exhaust hood cleaning in Oregon. Family-owned and operated. Proudly serving Eugene, Springfield, and Roseburg for 20 years.",
   areaServed: [
-    {
-      "@type": "State",
-      name: "Oregon",
-      addressCountry: "US"
-    },
-    {
-      "@type": "City",
-      name: "Eugene",
-      addressRegion: "OR",
-      addressCountry: "US"
-    },
-    {
-      "@type": "City",
-      name: "Medford",
-      addressRegion: "OR",
-      addressCountry: "US"
-    },
-    {
-      "@type": "City",
-      name: "Roseburg",
-      addressRegion: "OR",
-      addressCountry: "US"
-    },
-    {
-      "@type": "City",
-      name: "Grants Pass",
-      addressRegion: "OR",
-      addressCountry: "US"
-    },
-    {
-      "@type": "AdministrativeArea",
-      name: "Lane County",
-      addressRegion: "OR",
-      addressCountry: "US"
-    },
-    {
-      "@type": "City",
-      name: "Springfield",
-      addressRegion: "OR",
-      addressCountry: "US"
-    },
-    {
-      "@type": "Place",
-      name: "Umpqua",
-      postalCode: "97486",
-      addressRegion: "OR",
-      addressCountry: "US"
-    },
-    {
-      "@type": "City",
-      name: "Winston",
-      postalCode: "97496",
-      addressRegion: "OR",
-      addressCountry: "US"
-    },
-    {
-      "@type": "City",
-      name: "Creswell",
-      postalCode: "97426",
-      addressRegion: "OR",
-      addressCountry: "US"
-    },
-    {
-      "@type": "AdministrativeArea",
-      name: "Douglas County",
-      addressRegion: "CO",
-      addressCountry: "US"
-    },
-    {
-      "@type": "City",
-      name: "Cottage Grove",
-      postalCode: "97424",
-      addressRegion: "OR",
-      addressCountry: "US"
-    }
+    { "@type": "State", name: "Oregon" },
+    { "@type": "City", name: "Eugene" },
+    { "@type": "City", name: "Medford" },
+    { "@type": "City", name: "Roseburg" },
+    { "@type": "City", name: "Grants Pass" },
+    { "@type": "AdministrativeArea", name: "Lane County" },
+    { "@type": "City", name: "Springfield" },
+    { "@type": "Place", name: "Umpqua" },
+    { "@type": "City", name: "Winston" },
+    { "@type": "City", name: "Creswell" },
+    { "@type": "AdministrativeArea", name: "Douglas County" },
+    { "@type": "City", name: "Cottage Grove" }
   ],
   subOrganization: [
     {
