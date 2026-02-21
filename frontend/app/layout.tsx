@@ -95,6 +95,9 @@ const structuredData = {
     {
       "@type": "LocalBusiness",
       name: "Statewide Exhaust Hood Cleaning Services - Roseburg Area",
+      telephone: "+1-541-744-8810",
+      priceRange: "$$",
+      image: "https://www.statewideexhaustservices.com/opengraph.png",
       address: {
         "@type": "PostalAddress",
         streetAddress: "662 Winston Section Rd",
@@ -111,6 +114,9 @@ const structuredData = {
     {
       "@type": "LocalBusiness",
       name: "Statewide Exhaust Hood Cleaning Services - Eugene / Springfield Area",
+      telephone: "+1-541-744-8810",
+      priceRange: "$$",
+      image: "https://www.statewideexhaustservices.com/opengraph.png",
       address: {
         "@type": "PostalAddress",
         streetAddress: "3773 Main St",
