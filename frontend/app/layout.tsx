@@ -4,6 +4,7 @@ import { Popup } from "./ui/components";
 import { ReactNode, Suspense } from "react";
 import { Footer, Header } from "./ui/components";
 import { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next"
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -138,6 +139,7 @@ export default function RootLayout({
             paramName="show-contact-successful"
           />
         </Suspense>
+        <Analytics/>
       </body>
     </html>
   );
