@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function WhyChooseUs() {
     return (
         <>
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-black text-center mt-20 mb-6">Why Choose Us?</h1>
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-black text-center mt-20 mb-6" id="why-choose-us">Why Choose Us?</h1>
             <Card className="why-choose-us-card rounded-none max-w-none w-screen m-0 p-0 mb-24">
                 <div className="max-w-6xl flex flex-col md:flex-row gap-2 mx-auto">
 
