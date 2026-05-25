@@ -4,7 +4,8 @@ import { Popup } from "./ui/components";
 import { ReactNode, Suspense } from "react";
 import { Footer, Header } from "./ui/components";
 import { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -117,6 +118,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-VGRSMJWHZ3"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-VGRSMJWHZ3');
+          `}
+        </Script>
+      </head>
       <body className={inter.className}>
         <script
           type="application/ld+json"
@@ -139,7 +155,7 @@ export default function RootLayout({
             paramName="show-contact-successful"
           />
         </Suspense>
-        <Analytics/>
+        <Analytics />
       </body>
     </html>
   );
