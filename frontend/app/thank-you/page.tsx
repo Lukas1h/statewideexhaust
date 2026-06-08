@@ -1,31 +1,32 @@
 
-
+import { Card } from "../ui/components";
 import { ContactForm } from "@/app/ui/components"
 import { ContactUs } from "../ui/components";
 import Link from "next/link";
 
 
 export const metadata = {
-    title: "Contact Us"
+    title: "Thank You"
 }
 
 
-export default function ContactUsPagre() {
+export default function ThankYou() {
     return (
 
-        <div className="pt-8">
-            <ContactUs />
-
+        <div className="min-h-screen flex flex-col justify-center mx-auto">
             <h1
-                className="text-3xl md:text-3xl font-extrabold tracking-tight text-black text-center"
+                className="text-4xl md:text-5xl font-extrabold tracking-tight text-black text-center mt-8"
                 id="why-choose-us"
             >
-                More About Us
+                Thank You
             </h1>
 
-            <p className="text-center text-lg text-neutral-600 mt mb-6 max-w-2xl mx-auto">
-                See why you should choose Statewide Exhaust Services for all your kitchen exhaust needs.
+            <p className="text-center text-lg text-neutral-600 mt-0 mb-10 max-w-2xl mx-auto">
+                Need a quote or have questions about exhaust repairs, custom work, or installations?
+                Send us a message and we'll get back to you.
             </p>
+
+
             <div className="grid gap-6 md:grid-cols-2 max-w-6xl mx-auto mb-8">
 
                 <div className="rounded-lg border p-6 shadow-sm">
@@ -58,5 +59,6 @@ export default function ContactUsPagre() {
             </div>
         </div>
 
-    )
+
+    );
 }
