@@ -23,7 +23,7 @@ export default function ThankYou() {
 
             <p className="text-center text-lg text-neutral-600 mt-0 mb-10 max-w-2xl mx-auto">
                 Need a quote or have questions about exhaust repairs, custom work, or installations?
-                Send us a message and we'll get back to you.
+                Send us a message and we&apos;ll get back to you.
             </p>
 
 
