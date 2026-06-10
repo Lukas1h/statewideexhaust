@@ -12,7 +12,7 @@ export default function ContactUs() {
 
             <p className="text-center text-lg text-neutral-600 mt-4 mb-10 max-w-2xl mx-auto">
                 Need a quote or have questions about exhaust repairs, custom work, or installations?
-                Send us a message and we'll get back to you.
+                Send us a message and we&apos;ll get back to you.
             </p>
 
             <section className="max-w-6xl mx-auto overflow-hidden p-0 mb-20">
@@ -27,7 +27,7 @@ export default function ContactUs() {
                         </h2>
 
                         <p className="text-neutral-300 leading-relaxed mb-8">
-                            Have any questions or interested in a free quote? We'd love to hear from you.
+                            Have any questions or interested in a free quote? We&apos;d love to hear from you.
                         </p>
 
                         <div className="space-y-6">
