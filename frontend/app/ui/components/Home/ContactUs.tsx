@@ -33,12 +33,12 @@ export default function ContactUs() {
                         <div className="space-y-6">
                             <div>
                                 <p className="text-sm uppercase opacity-60">Phone</p>
-                                <p className="text-xl font-semibold">(555) 555-5555</p>
+                                <p className="text-xl font-semibold">(541) 679-0225</p>
                             </div>
 
                             <div>
                                 <p className="text-sm uppercase opacity-60">Email</p>
-                                <p className="text-xl font-semibold">info@statewideexhaust.com</p>
+                                <p className="text-xl font-semibold">statewideexhaust@gmail.com</p>
                             </div>
 
                             <div>
